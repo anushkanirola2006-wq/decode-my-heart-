@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: radial-gradient(circle, #101c3d, #020611 75%);
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+#canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.heading {
+    position: absolute;
+    top: 7%;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+.heading h1 {
+    font-size: 30px;
+    letter-spacing: 7px;
+    color: #b8f5ff;
+    text-shadow: 0 0 15px cyan;
+}
+
+.heading p {
+    margin-top: 10px;
+    color: #a5b9e8;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.search-box {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    width: 290px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px;
+    background: rgba(2, 10, 30, 0.35);
+}
+
+.search-box h2 {
+    color: white;
+    margin-bottom: 15px;
+    text-shadow: 0 0 12px cyan;
+}
+
+.search-box p {
+    color: #b8f5ff;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.search-box input {
+    margin-top: 10px;
+    padding: 12px;
+    width: 90%;
+    border: 1px solid cyan;
+    border-radius: 25px;
+    background: #071426;
+    color: white;
+    text-align: center;
+    outline: none;
+}
+
+.search-box button {
+    margin-top: 15px;
+    padding: 10px 30px;
+    border: 1px solid cyan;
+    border-radius: 25px;
+    background: transparent;
+    color: cyan;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background: cyan;
+    color: #020611;
+    box-shadow: 0 0 20px cyan;
+}
+
+#result {
+    color: #d4aaff;
+}
+
+.love-message {
+    display: none;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    width: 260px;
+    text-align: center;
+    padding: 15px;
+    background: rgba(2, 10, 30, 0.25);
+    border-radius: 20px;
+    text-shadow: 0 0 12px cyan;
+}
+
+.love-message h2 {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.love-message p {
+    font-size: 13px;
+    color: #b8f5ff;
+    line-height: 1.8;
+    margin: 8px 0;
+}
+
+.love-message span {
+    display: block;
+    margin-top: 15px;
+    color: #d4aaff;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
